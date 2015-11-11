@@ -1,0 +1,7 @@
+build:
+  image: ruby:2.2
+  cache:
+    - /tmp/bundler
+  commands:
+    - bundle install --path=/tmp/bundler
+    - bundle exec script/test
